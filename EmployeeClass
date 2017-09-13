@@ -1,0 +1,46 @@
+  class Employee{
+     String name;
+     int age;
+     String designation;
+     double salary;
+     
+     public void getEmployeeName(String employeeName){
+         name = employeeName;
+         //return name;
+     }
+     
+     public void getEmployeeAge(int employeeAge){
+         age = employeeAge;
+        // return employeeAge;
+     }
+     
+     public void getEmployeeDesignation(String employeeDesignation){
+         designation = employeeDesignation;
+       //  return employeeDesignation;
+     }
+     
+     public void getEmployeeSalary(double employeeSalary){
+         salary = employeeSalary;
+        // return employeeSalary;
+     }
+     
+     public void getEmployeeDetails(){
+         System.out.println();
+         System.out.println("Employee name: " + name);
+         System.out.println("Employee age: " + age);
+         System.out.println("Employee designation: " + designation);
+         System.out.println("Employee salary " + salary);
+     }
+ }
+ 
+ public class EmployeeTest{
+     public static void main(String[] args){
+         Employee employee1 = new Employee();
+         employee1.getEmployeeName("Joshua Mulaudzi");
+         employee1.getEmployeeAge(25);
+         employee1.getEmployeeDesignation("Software Developer");
+         employee1.getEmployeeSalary(298000);
+         employee1.getEmployeeDetails();
+         
+     }
+ }
